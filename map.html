@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云南分布 · 云岭非遗</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>云南非遗分布</h1>
+      <p>点击地图上的州市，查看该地区的非物质文化遗产项目</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container map-layout">
+      <!-- 左：地图 -->
+      <div class="map-box">
+        <svg id="yn-map" viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg">
+          <!-- 简化的云南州市示意图，区域块用于交互演示 -->
+          <g id="regions">
+            <g class="region" data-region="nujiang">
+              <rect x="40"  y="60"  width="90" height="110" rx="10"/>
+              <text x="85"  y="120">怒江州</text>
+            </g>
+            <g class="region" data-region="lijiang">
+              <rect x="150" y="40"  width="110" height="90" rx="10"/>
+              <text x="205" y="90">丽江市</text>
+            </g>
+            <g class="region" data-region="dali">
+              <rect x="150" y="150" width="110" height="100" rx="10"/>
+              <text x="205" y="205">大理州</text>
+            </g>
+            <g class="region" data-region="xishuangbanna">
+              <rect x="150" y="280" width="120" height="100" rx="10"/>
+              <text x="210" y="335">西双版纳州</text>
+            </g>
+            <g class="region" data-region="honghe">
+              <rect x="290" y="220" width="110" height="100" rx="10"/>
+              <text x="345" y="275">红河州</text>
+            </g>
+            <g class="region" data-region="wenshan">
+              <rect x="420" y="220" width="80"  height="100" rx="10"/>
+              <text x="460" y="275">文山州</text>
+            </g>
+          </g>
+        </svg>
+        <p class="map-hint">* 此为示意分布图，用于交互演示，非精确行政边界</p>
+      </div>
+
+      <!-- 右：该地区项目 -->
+      <aside class="region-panel">
+        <h2 id="region-title">全部地区</h2>
+        <p id="region-count" class="region-count"></p>
+        <div id="region-items" class="region-items"></div>
+      </aside>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/map.js"></script>
+</body>
+</html>

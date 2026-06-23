@@ -1,0 +1,32 @@
+/* 地图分布页样式  作者：陈宇博 */
+.map-layout { display: flex; gap: 32px; flex-wrap: wrap; align-items: flex-start; }
+.map-box { flex: 1.2; min-width: 320px; background: #fff; border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 20px; }
+#yn-map { width: 100%; height: auto; }
+
+.region rect {
+  fill: #e7d8b8; stroke: var(--c-primary); stroke-width: 2; cursor: pointer;
+  transition: fill .2s, transform .2s; transform-origin: center;
+}
+.region:hover rect { fill: var(--c-accent); }
+.region.active rect { fill: var(--c-primary); }
+.region text {
+  font-size: 15px; fill: var(--c-ink); text-anchor: middle; pointer-events: none;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+.region.active text { fill: #fff; }
+.map-hint { color: var(--c-muted); font-size: 12px; margin-top: 12px; text-align: center; }
+
+.region-panel { flex: 1; min-width: 280px; background: #fff; border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 24px; }
+.region-panel h2 { color: var(--c-primary); margin-bottom: 6px; }
+.region-count { color: var(--c-muted); margin-bottom: 18px; font-size: 14px; }
+.region-items { display: flex; flex-direction: column; gap: 14px; }
+
+.region-item { display: flex; gap: 14px; padding: 12px; border-radius: 10px;
+  border: 1px solid var(--c-line); transition: background .2s; }
+.region-item:hover { background: var(--c-bg); }
+.region-item img { width: 70px; height: 70px; border-radius: 8px; object-fit: cover; }
+.region-item .ri-info h3 { font-size: 16px; margin-bottom: 4px; color: var(--c-primary); }
+.region-item .ri-info p { font-size: 13px; color: var(--c-muted); }
+.region-item .ri-info .ri-tag { font-size: 12px; color: var(--c-primary-light); }

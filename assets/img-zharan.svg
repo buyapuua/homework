@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#264653"/><stop offset="1" stop-color="#2a9d8f"/>
+  </linearGradient></defs>
+  <rect width="400" height="260" fill="url(#g)"/>
+  <text x="200" y="120" font-size="72" text-anchor="middle" fill="#ffffff" opacity="0.92">&#x67D3;</text>
+  <text x="200" y="195" font-size="26" font-family="Microsoft YaHei, sans-serif" text-anchor="middle" fill="#ffffff" font-weight="bold">白族扎染</text>
+</svg>

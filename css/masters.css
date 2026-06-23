@@ -1,0 +1,19 @@
+/* 传承人专栏样式  作者：宋俊豪 */
+.masters-list { display: flex; flex-direction: column; gap: 28px; }
+.master-card {
+  display: flex; gap: 28px; background: #fff; border-radius: var(--radius);
+  box-shadow: var(--shadow); overflow: hidden; align-items: stretch;
+}
+.master-card:nth-child(even) { flex-direction: row-reverse; }
+.master-card .m-avatar { width: 240px; min-width: 240px; object-fit: cover; }
+.master-card .m-body { padding: 28px; display: flex; flex-direction: column; }
+.master-card .m-body h2 { color: var(--c-primary); font-size: 24px; margin-bottom: 6px; }
+.master-card .m-title { color: var(--c-primary-light); font-size: 14px; margin-bottom: 4px; }
+.master-card .m-region { color: var(--c-muted); font-size: 13px; margin-bottom: 14px; }
+.master-card .m-story { color: #444; flex: 1; }
+.master-card .m-link { margin-top: 16px; align-self: flex-start; }
+
+@media (max-width: 768px) {
+  .master-card, .master-card:nth-child(even) { flex-direction: column; }
+  .master-card .m-avatar { width: 100%; min-width: 0; height: 200px; }
+}

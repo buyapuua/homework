@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>互动留言 · 云岭非遗</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/interact.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>我的收藏 · 互动留言</h1>
+      <p>收藏你喜爱的非遗项目，分享你对传统文化的感受</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container interact-layout">
+      <!-- 收藏夹 -->
+      <div class="panel">
+        <h2 class="panel-title">★ 我的收藏</h2>
+        <div id="fav-list" class="fav-list"></div>
+        <p id="fav-empty" class="empty-tip" style="display:none;">还没有收藏，去 <a href="list.html">名录</a> 看看吧。</p>
+      </div>
+
+      <!-- 留言板 -->
+      <div class="panel">
+        <h2 class="panel-title">💬 留言板</h2>
+        <form id="msg-form" class="msg-form">
+          <input type="text" id="msg-name" maxlength="20" placeholder="你的昵称" required>
+          <textarea id="msg-content" maxlength="200" rows="3" placeholder="说说你对云南非遗的感受…" required></textarea>
+          <button type="submit" class="btn">发表留言</button>
+        </form>
+        <div id="msg-list" class="msg-list"></div>
+        <p id="msg-empty" class="empty-tip" style="display:none;">还没有留言，来做第一个分享的人吧。</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/interact.js"></script>
+</body>
+</html>

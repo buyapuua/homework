@@ -1,0 +1,22 @@
+/* 名录列表页样式  作者：张建波 */
+.page-head { background: linear-gradient(135deg, #bb3e03, #9b2226); color: #fff; padding: 48px 0; }
+.page-head h1 { font-size: 34px; margin-bottom: 8px; }
+.page-head p { color: #f3e9d8; }
+
+.toolbar { margin-bottom: 24px; }
+.search-box {
+  width: 100%; padding: 14px 18px; font-size: 16px; border: 2px solid var(--c-line);
+  border-radius: 999px; outline: none; margin-bottom: 18px; transition: border-color .2s;
+}
+.search-box:focus { border-color: var(--c-primary); }
+
+.filters { display: flex; flex-wrap: wrap; gap: 10px; }
+.filter-btn {
+  padding: 7px 18px; border-radius: 999px; border: 1px solid var(--c-line);
+  background: #fff; cursor: pointer; font-size: 14px; transition: all .2s;
+}
+.filter-btn:hover { border-color: var(--c-primary); }
+.filter-btn.active { background: var(--c-primary); color: #fff; border-color: var(--c-primary); }
+
+.result-count { color: var(--c-muted); margin-bottom: 18px; }
+.empty-tip { text-align: center; color: var(--c-muted); padding: 40px 0; }

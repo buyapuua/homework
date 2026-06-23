@@ -1,0 +1,29 @@
+/* 详情页样式  作者：文祺武 */
+.detail-wrap { padding: 40px 20px 20px; }
+.breadcrumb { color: var(--c-muted); font-size: 14px; margin-bottom: 20px; }
+.breadcrumb a { color: var(--c-primary); }
+
+.detail-hero { display: flex; gap: 32px; flex-wrap: wrap; margin-bottom: 36px; }
+.detail-hero img { width: 360px; max-width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
+.detail-info { flex: 1; min-width: 280px; }
+.detail-info .tag { display: inline-block; background: #f4e7c9; color: var(--c-primary-light);
+  padding: 3px 14px; border-radius: 999px; font-size: 13px; margin-bottom: 12px; }
+.detail-info h1 { font-size: 34px; color: var(--c-primary); margin-bottom: 16px; }
+.detail-meta { list-style: none; margin: 18px 0; }
+.detail-meta li { padding: 6px 0; border-bottom: 1px dashed var(--c-line); color: var(--c-ink); }
+.detail-meta li span { color: var(--c-muted); display: inline-block; width: 90px; }
+
+.detail-actions { display: flex; gap: 14px; margin-top: 20px; }
+.fav-btn {
+  padding: 10px 24px; border-radius: 999px; border: 2px solid var(--c-primary);
+  background: #fff; color: var(--c-primary); cursor: pointer; font-weight: 700; transition: all .2s;
+}
+.fav-btn.active { background: var(--c-primary); color: #fff; }
+
+.detail-body { background: #fff; padding: 28px; border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 36px; }
+.detail-body h2 { color: var(--c-primary); margin-bottom: 14px; font-size: 22px; }
+.detail-body p { color: #444; }
+
+.related h2 { color: var(--c-primary); margin-bottom: 18px; }
+.not-found { text-align: center; padding: 80px 0; }
+.not-found h1 { font-size: 28px; color: var(--c-primary); margin-bottom: 12px; }

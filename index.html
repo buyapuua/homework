@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云岭非遗 · 云南非物质文化遗产数字展馆</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <!-- Hero 区 -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">云南 · 非物质文化遗产数字展馆</p>
+        <h1>云岭之上，<br>千年技艺生生不息</h1>
+        <p class="hero-desc">这里汇集了云南各民族世代相传的舞蹈、音乐、技艺与民俗。<br>让我们一起走进云岭大地，感受中华优秀传统文化的魅力。</p>
+        <div class="hero-actions">
+          <a href="list.html" class="btn">浏览非遗名录</a>
+          <a href="map.html" class="btn btn-outline">查看云南分布</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero.svg" alt="云岭非遗">
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据概览 -->
+  <section class="section stats-section">
+    <div class="container stats">
+      <div class="stat"><span class="num" data-target="8">0</span><span class="label">收录项目</span></div>
+      <div class="stat"><span class="num" data-target="6">0</span><span class="label">涉及州市</span></div>
+      <div class="stat"><span class="num" data-target="5">0</span><span class="label">遗产类别</span></div>
+      <div class="stat"><span class="num" data-target="8">0</span><span class="label">代表性传承人</span></div>
+    </div>
+  </section>
+
+  <!-- 精选推荐 -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">精选非遗</h2>
+      <p class="section-sub">从云岭大地精选的代表性非物质文化遗产项目</p>
+      <div class="grid" id="featured-grid"></div>
+      <div style="text-align:center;margin-top:32px;">
+        <a href="list.html" class="btn">查看全部名录 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分类入口 -->
+  <section class="section category-section">
+    <div class="container">
+      <h2 class="section-title">按类别探索</h2>
+      <p class="section-sub">五大类别，领略非遗的多元之美</p>
+      <div class="category-grid" id="category-grid"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

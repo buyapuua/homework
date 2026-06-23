@@ -1,0 +1,37 @@
+/* 互动页样式  作者：林劲泉 */
+.interact-layout { display: flex; gap: 28px; flex-wrap: wrap; align-items: flex-start; }
+.panel { flex: 1; min-width: 300px; background: #fff; border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 24px; }
+.panel-title { color: var(--c-primary); margin-bottom: 18px; font-size: 22px; }
+
+/* 收藏夹 */
+.fav-list { display: flex; flex-direction: column; gap: 12px; }
+.fav-item { display: flex; gap: 12px; align-items: center; padding: 10px;
+  border: 1px solid var(--c-line); border-radius: 10px; }
+.fav-item img { width: 60px; height: 60px; border-radius: 8px; object-fit: cover; }
+.fav-item .fi-info { flex: 1; }
+.fav-item .fi-info h3 { font-size: 16px; color: var(--c-primary); }
+.fav-item .fi-info p { font-size: 12px; color: var(--c-muted); }
+.fav-item .fi-remove { background: none; border: none; color: #c0392b; cursor: pointer; font-size: 18px; }
+
+/* 留言表单 */
+.msg-form { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+.msg-form input, .msg-form textarea {
+  padding: 10px 14px; border: 1px solid var(--c-line); border-radius: 8px;
+  font-size: 14px; font-family: inherit; outline: none; resize: vertical;
+}
+.msg-form input:focus, .msg-form textarea:focus { border-color: var(--c-primary); }
+.msg-form .btn { align-self: flex-start; }
+
+/* 留言列表 */
+.msg-list { display: flex; flex-direction: column; gap: 14px; }
+.msg-card { padding: 14px; border-radius: 10px; background: var(--c-bg); position: relative; }
+.msg-card .mc-head { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.msg-card .mc-name { font-weight: 700; color: var(--c-primary); }
+.msg-card .mc-time { font-size: 12px; color: var(--c-muted); }
+.msg-card .mc-content { color: #444; font-size: 14px; word-break: break-word; }
+.msg-card .mc-remove { position: absolute; top: 10px; right: 12px; background: none;
+  border: none; color: #c0392b; cursor: pointer; font-size: 14px; }
+
+.empty-tip { color: var(--c-muted); padding: 20px 0; text-align: center; }
+.empty-tip a { color: var(--c-primary); }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>非遗名录 · 云岭非遗</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>非遗名录</h1>
+      <p>检索与筛选云南各民族的非物质文化遗产项目</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- 搜索与筛选 -->
+      <div class="toolbar">
+        <input type="text" id="search-input" class="search-box" placeholder="搜索项目名称、地区或关键词…">
+        <div class="filters" id="cat-filters"></div>
+      </div>
+
+      <p class="result-count" id="result-count"></p>
+      <div class="grid" id="list-grid"></div>
+      <p class="empty-tip" id="empty-tip" style="display:none;">没有找到匹配的项目，换个关键词试试吧。</p>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/list.js"></script>
+</body>
+</html>
